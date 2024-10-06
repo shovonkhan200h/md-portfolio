@@ -19,14 +19,8 @@ const content = [
     description:
       "Developed and designed various websites for small businesses using HTML, CSS, and JavaScript. Learned to manage client relationships, deadlines, and project expectations. Designed and developed a responsive website for a local restaurant resulting in an increase in online reservations.Developed and deployed a WordPress website for a local retail storeWorked with clients to create a unique online presence in line with their business needs.Managed project timelines to ensure timely delivery.",
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        Fiverr <br /> Jan 2022 - Present
       </div>
     ),
   },

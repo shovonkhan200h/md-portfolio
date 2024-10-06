@@ -89,22 +89,22 @@ export const tabInfo = [
         )
       },
       { id:4,
-        title: "Agency",
-        value: "agency",
+        title: "Desing",
+        value: "Desing",
         content: (
           <div className="flex flex-col w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
             <p className="mb-2">Angel Lili Acc firm</p>
            
             <div className="w-full">
-            <img src="https://i.imgur.com/N6uIhnr.png" className="object-cover"/>
+            <img src="https://i.imgur.com/N6uIhnr.png" className="object-contain"/>
             </div>
             
             <div className="flex justify-between py-2 gap-2 text-md cursor-pointer">
               <div>
                <ul className="flex text-sm gap-5">
-                <li>React.Js</li>
-                <li>FireBase</li>
-                <li>Tailwind</li>
+                <li>WordPress</li>
+                <li>Elementor Pro</li>
+                <li>Ocean Pro</li>
                </ul>
               </div>
 
