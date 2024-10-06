@@ -72,6 +72,7 @@ export const Tabs = ({
               {tab.title}
             </span>
           </button>
+          
         ))}
       </div>
       <FadeInDiv
