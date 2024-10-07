@@ -102,9 +102,10 @@ export const tabInfo = [
             <div className="flex justify-between py-2 gap-2 text-md cursor-pointer">
               <div>
                <ul className="flex text-sm gap-5">
-                <li>WordPress</li>
-                <li>Elementor Pro</li>
-                <li>Ocean Pro</li>
+                <li>React.Js</li>
+                <li>Tailwind CSS</li>
+                <li>EmailJs</li>
+                <li>MongoDB</li>
                </ul>
               </div>
 

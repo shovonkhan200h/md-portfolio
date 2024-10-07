@@ -2,7 +2,7 @@ import React from "react";
 import hero from "../assets/1.jpg";
 import { Aboutinfo } from "../Constant";
 import { IoMdArrowDropright } from "react-icons/io";
-import { StickyScrollRevealDemo } from "./ui/Banner/Work/WorkComponent";
+import { StickyScrollRevealDemo } from "./ui/Work/WorkComponent";
 
 const AboutMe = () => {
   return (

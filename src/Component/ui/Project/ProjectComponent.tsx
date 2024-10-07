@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { Tabs } from "./Project";
-import {tabInfo} from '../../../Constant/index.jsx'
+import {tabInfo} from './index'
 
 
 
