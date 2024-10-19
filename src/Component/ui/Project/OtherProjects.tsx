@@ -14,49 +14,44 @@ import React from "react";
 export function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Clerkenwell bio botanics",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
-    },
-    {
-      title: "Ease of use",
-      description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "Ticket selling application using React.Js, Framer Motion, firebase",
       icon: <IconEaseInOut />,
+      link:'https://www.clerkenwell-bio-botanics.co.uk/'
     },
     {
-      title: "Pricing like no other",
+      title: "Red Onion Food",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "Built with React.Js, React Bootstrap, firebase",
+      icon: <IconTerminal2 />,
+      link:'https://beamish-horse-f98178.netlify.app/'
+    },
+    {
+      title: "Spotify-Clone",
+      description:
+        "Build with React.Js, TailwindCss, Firebase",
       icon: <IconCurrencyDollar />,
+      link:'https://courageous-valkyrie-4a5451.netlify.app'
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: "Covid-Tracker",
+      description: "Build with HTML,CSS, JS",
       icon: <IconCloud />,
+      link:'https://shovonkhan200h.github.io/covid-tracker/'
     },
     {
-      title: "Multi-tenant Architecture",
+      title: "CAFENA",
       description: "You can simply share passwords instead of buying new seats",
       icon: <IconRouteAltLeft />,
+      link:'https://shovonkhan200h.github.io/Coffe-shop/'
     },
     {
-      title: "24/7 Customer Support",
+      title: "Dell Clone",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "Build with HTML,CSS, JS, Bootstrap",
       icon: <IconHelp />,
-    },
-    {
-      title: "Money back guarantee",
-      description:
-        "If you donot like EveryAI, we will convince you to like us.",
-      icon: <IconAdjustmentsBolt />,
-    },
-    {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
-      icon: <IconHeart />,
+      link:'https://shovonkhan200h.github.io/dell/'
     },
   ];
   return (
@@ -73,11 +68,13 @@ const Feature = ({
   description,
   icon,
   index,
+  link,  // Accept the link as a prop
 }: {
   title: string;
   description: string;
   icon: React.ReactNode;
   index: number;
+  link: string; // Type for link
 }) => {
   return (
     <div
@@ -98,9 +95,15 @@ const Feature = ({
       </div>
       <div className="text-lg font-bold mb-2 relative z-10 px-10">
         <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
-        <span className="cursor-pointer group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">
+        {/* Make the title a clickable link */}
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100"
+        >
           {title}
-        </span>
+        </a>
       </div>
       <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
         {description}
